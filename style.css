@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  background: black;
+  color: white;
+  font-family: monospace;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 800px;
+  gap: 10px;
+  padding: 10px;
+}
+
+.big {
+  grid-column: span 2;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  padding: 40px;
+  background: #333; /* grey box = image placeholder */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text {
+  grid-row: 2;
+  text-align: right;
+}
+
+h2 {
+  font-size: 40px;
+  letter-spacing: 8px;
+}
